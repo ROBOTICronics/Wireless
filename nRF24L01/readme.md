@@ -6,4 +6,4 @@ Open the Arduino IDE and select Sketch from the top menu bar and select Include 
 Select Add .ZIP Library from the Include Library sub-menu and use the dialog box to select the ZIP file you have downloaded.
 
 
-Finally, the RadioHead library will be installed.
+Finally, the RF24 library will be installed.
