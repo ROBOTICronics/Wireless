@@ -1,8 +1,4 @@
-About Wireless Joystick
-
-NRF24L01 library:
-Read @ http://www.airspayce.com/mikem/arduino/RadioHead/
-
+About Wireless Joystick with nRF24L01
 
 Open the Arduino IDE and select Sketch from the top menu bar and select Include Library from the Sketch menu drop-down.
 
