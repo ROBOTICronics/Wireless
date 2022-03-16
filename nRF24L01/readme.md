@@ -11,7 +11,7 @@ ___
 ### nRF24L01 Pinout
 ![nRF24L01 Pinout](./imgs/nrf24l01.png)
 ___
-### power the nRF24L01 module by connecting it to the 3.3V pin
+### Powering the nRF24L01 module by connecting it to the 3.3V pin
 In these cases it is advisable to use a special adapter or to solder a 10μF electrolytic capacitor to the module, placing it between the Vcc and GND pin.
 
 ![Powering to the 3.3V pin](./imgs/nRF24L01-capacitor.png)
@@ -36,7 +36,7 @@ Pls, note: the IRQ pin, used as a “switch” to turn the module on/off, will n
 #include <nRF24L01.h>
 #include <RF24.h>
  
-RF24 myRF24 (7, 8);
+RF24 myRF24 (7, 8); // according to the above table
 byte address[6] = "00001";
 ```
 Pls, note: the setting of the methods *.setChannel* and *.setDataRate* will not be covered in this guide.
@@ -46,7 +46,7 @@ Serial.begin(9600);
  
 myRF24.begin();
 myRF24.openWritingPipe(address);
-myRF24.setPALevel(RF24_PA_MIN);
+myRF24.setPALevel(RF24_PA_MIN); // even RF24_PA_MAX, obviously
 myRF24.stopListening();
 ```
 
@@ -54,7 +54,7 @@ myRF24.stopListening();
 // Setup of TX
 myRF24.begin();
 myRF24.openReadingPipe(0, address);
-myRF24.setPALevel(RF24_PA_MIN);
+myRF24.setPALevel(RF24_PA_MIN); // even RF24_PA_MAX, obviously
 myRF24.startListening();
 ```
 
