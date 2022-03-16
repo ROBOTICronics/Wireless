@@ -11,4 +11,4 @@ ___
 ## power the nRF24L01 module by connecting it to the 3.3V pin
 In these cases it is advisable to use a special adapter or to solder a 10μF electrolytic capacitor to the module, placing it between the Vcc and GND pin.
 
-[Powering to the 3.3V pin](https://google.com)
+![Powering to the 3.3V pin](./imgs/nRF24L01-capacitor.png)
